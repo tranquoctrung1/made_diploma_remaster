@@ -1,0 +1,68 @@
+
+.main
+	background: #ededed
+	padding: 1rem
+	.container
+		box-shadow: 0 0 5px 0px
+		.row
+			.main-col
+				background: white
+				.main-title
+					text-transform: uppercase
+					margin-top: 1rem 
+					color: red
+					font-weight: bolder
+					margin: 1rem 0
+				.infor
+					b.fas.fa-mobile-alt
+						font-size: 25px
+						margin: .5em
+					b.far.fa-envelope
+						font-size: 25px
+						margin-top: .5em
+					b.email 
+						font-size: 20px
+			nav 
+				ul 
+					padding: 0
+					li 
+						list-style-type: none
+			nav.linker
+				ul 
+					padding: 0
+					li 
+						list-style-type: none
+						padding: .5rem
+						a 
+							text-decoration: none
+							color: black
+							font-weight: bold
+							background: #ecf0f1
+							padding: .5rem
+							border-top-left-radius: 10px
+							border-bottom-right-radius: 10px
+							transition: .5s all ease-in-out
+							&:hover
+								background: #f1c40f
+						i 
+							font-size: 25px
+			.dropdown
+				margin: 1rem 0	
+				#dropdownMenuButton.active
+					background: black
+					border: none
+					&:after
+						transition: .5s all ease-in-out
+						transform: rotate(270deg)
+				.dropdown-menu
+					span 
+						font-weight: bolder
+				@media only screen and (max-width: 768px)
+					position: fixed
+					bottom: 50%
+					right: 0
+
+
+
+
+

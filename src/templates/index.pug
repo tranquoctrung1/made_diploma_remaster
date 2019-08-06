@@ -1,0 +1,93 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Trang chủ'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+block body
+	section.homeSlider
+		.owl-carousel.owl-theme
+			.item
+				img(src="./img/home_slider_1.png", alt="hình ảnh bằng tốt nghiệp")
+			.item
+				img(src="./img/home_slider_2.png", alt="hình ảnh bằng tốt nghiệp")
+			.item
+				img(src="./img/home_slider_3.png", alt="hình ảnh bằng tốt nghiệp")
+	section.intro.mt-5
+		.container-fluid
+			.row.mb-4
+				.col.text-center
+					h1 Chúng tôi là ai?
+			.row
+				.col-md-6.text-justify.content
+					.box-content
+						h3.text-right.mt-3 Chúng Tôi Là Toàn Thắng
+						p Chúng Tôi Dịch Vụ Uy Tính Chất Lượng Với Nhiều Năm Kinh Nghiệm Trong Lĩnh Vực Cung Cấp Các Bằng Và Chứng Chỉ . Sẽ Tạo Ra Cho Các Bạn 1 Bằng Như Thật 100% Có Tem BGD Và Dấu Đóng Sống. 
+						.inner.mb-3
+							span.infor.fas.fa-phone
+							div.hello Chào mừng bạn đã đến với chúng tôi
+							p.content Liên hệ với chúng tôi qua số điện thoại 
+								a(href="tel:0783221455") 0783221455
+				.col-md-6.image
+					img(src="./img/home_news_1.jpg", alt="hình ảnh bằng tốt nghiệp", srcset="")
+	section.production.mt-5
+		.container
+			.row.mb-4
+				.col.text-center
+					h2 Các Loại Bằng!
+			.row
+				.col-md-6
+					figure
+						.box
+							img(src="./img/home_news_1.jpg", alt="hình ảnh bằng tốt nghiệp", srcset="")
+						figcaption.pt-3.pl-3.pr-2
+							h3 
+								a(href="./bangdaihoc.hmtl") Bằng Đại Học
+							p Có Tất Cả Mẫu Về Bằng Đại Học Các Trường Trên Cả Nước Các Ngành Nghề Bạn Mong Muốn !
+							button.mb-3
+								a.link(href="./bangdaihoc.hmtl") Xem Chi Tiết
+				.col-md-6
+					figure
+						.box
+							img(src="./img/home_news_2.jpg", alt="hình ảnh bằng tốt nghiệp", srcset="")
+						figcaption.pt-3.pl-3.pr-2
+							h3 
+								a(href="./bangcaodang.hmtl") Bằng Cao Đẳng
+							p Có Tất Cả Mẫu Về Bằng Cao Đẳng Các Trường Trên Cả Nước Các Ngành Nghề Bạn Mong Muốn !
+							button.mb-3
+								a.link(href="./bangcaodang.hmtl") Xem Chi Tiết
+				.col-md-6
+					figure
+						.box
+							img(src="./img/home_news_3.jpg", alt="hình ảnh bằng tốt nghiệp", srcset="")
+						figcaption.pt-3.pl-3.pr-2
+							h3 
+								a(href="./bangdaihoc.hmtl") Bằng Phổ Thông
+							p Có Tất Cả Mẫu Về Bằng Phổ Thông Các Trường Trên Cả Nước Các Ngành Nghề Bạn Mong Muốn !
+							button.mb-3
+								a.link(href="./bangphothong.hmtl") Xem Chi Tiết
+				.col-md-6
+					figure
+						.box
+							img(src="./img/banglai.png", alt="hình ảnh bằng tốt nghiệp", srcset="")
+						figcaption.pt-3.pl-3.pr-2
+							h3 
+								a(href="./bangdaihoc.hmtl") Bằng Lái Xe
+							p Có Tất Cả Mẫu Về Bằng Lái Xe Các Trường Trên Cả Nước Các Ngành Nghề Bạn Mong Muốn !
+							button.mb-3
+								a.link(href="./banglaixe.hmtl") Xem Chi Tiết
+	section.home-clients.mt-5
+		.container
+			.row.mb-4
+				.col.text-center
+					h3.text-center CÁC CHỨNG CHỈ KHÁC 
+			.row
+				.col
+					.owl-carousel.owl-theme
+						- for(x=1;x<10;x++)
+							.item
+								if (x < 8)
+									img(src="./img/clients_"+x+".png", alt="")
+								else
+									img(src="./img/clients_"+(x-3)+".png", alt="")

@@ -1,0 +1,111 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Bằng Trung Học'
+	- var description = 'làm bằng đại học giá chuẩn uy tín và nhận hàng nhanh'
+	- var bodyclass = 'highschool_diploma'
+
+block body
+	section.main.mt-3
+		.container.text-center
+			.row
+				.col-12.main-col
+					h2.main-title.text-center Chuyên làm bằng Trung Học Phổ Thông 
+					p Trong thời kỳ hội nhập kinh tế hiện nay. Để giúp người lao động có công ăn việc làm tại các công ty xí nghiệp tư nhân và cả liên doanh nước ngoài chúng tôi cung cấp 
+						b dịch vụ 
+						b(style="color: #1abc9c") làm bằng Trung Học Phổ Thông 
+						b uy tín giá cả phải chăn. 
+						| Vì vậy cầm tấm bằng đại học, cao đẳng hay là trung học phổ thông thì đó là 1 điều tuyệt vời. Với tấm bằng này bạn có thể làm rất nhiều việc.
+					img.mt-3.img-fluid(src="./img/2.png", alt="làm bằng tốt nghiệp", srcset="")
+					h3.main-title Thông tin liên hệ:
+					section.infor
+						.container.text-center
+							.row
+								.col
+									b.mt-2.fas.fa-mobile-alt
+										span.phone  0783221455
+					h3.main-title.mt-4 Các dịch vụ làm bằng: 
+					p - 
+						b Tiến sĩ - Thạc sĩ: 
+						| Bằng + Bảng điểm + 5 bộ photo công chứng
+					p - 
+						b Đại học: 
+						| Bằng + Bảng điểm + 5 bộ photo công chứng
+					p - 
+						b Cao đẳng: 
+						| Bằng + Bảng điểm + 5 bộ photo công chứng
+					p - 
+						b Trung học phổ thông: 
+						| Bằng + Bảng điểm + 5 bộ photo công chứng
+					p.mt-3(STYLE="font-weight: bold") MẶC SAU CỦA BẰNG TỐT NGHIỆP
+					section
+						.container
+							.row
+								.col.pl-0.pr-0
+									img.img-flui(src="./img/phothong.png", alt="mặt sau của bằng đại học", srcset="" style="width: 100%")
+					p.mt-3(STYLE="font-weight: bold") MẶC TRƯỚC CỦA BẰNG TỐT NGHIỆP
+					section
+						.container
+							.row
+								.col.pl-0.pr-0
+									img.img-fluid(src="./img/phothong2.png", alt="mặt sau của bằng đại học", srcset="")
+					h3.main-title thông tin cần cung cấp cho chúng tôi: 
+					nav
+						ul
+							li
+								B HỌ VÀ TÊN:
+							li
+								B NGÀY THÁNG NĂM SINH:
+							li
+								B NƠI SINH TRONG CMND:
+							li
+								B GIỚI TÍNH:
+							li
+								B TÊN TRƯỜNG ĐẠI HỌC CẦN LÀM:
+							li
+								B NĂM TỐT NGHIỆP:
+							li
+								B NGÀNH HỌC HOẶC CHUYÊN NGÀNH ĐÀO TẠO:
+							li
+								B NĂM TỐT NGHIỆP:
+							li
+								B XẾP LOẠI TỐT NGHIỆP:
+							li
+								B LOẠI HÌNH ĐÀO TẠO(CHÍNH QUY HAY TẠI CHỨC):
+							li
+								B HÌNH THẺ 3X4
+					h3.main-title hình thức giao dịch
+					nav
+						ul
+							li
+								p Làm xong mới nhận tiền, không bắt buộc phải đặt tiền cọc trước 
+							li
+								p Khách hàng có thể gặp mặt trực tiếp người giao, kiểm tra và có thể trao trả không tốn phí khi không dúng theo mong muốn của bạn
+							li
+								p Sau khi đưa ra thông tin đầy đủ thông tin trong vòng 3 đến 4 ngày sẽ có bằng và có gốc công chứng 
+							li
+								p Nếu bạn ở xa thì có thể yêu cầu làm gấp
+							li
+								p Hồ sơ sẽ có đầy đủ các loại BẰNG, BẢNG ĐIỂM và HỌC BẠ
+							li
+								p Luôn luôn uy tín đúng hẹn , PHÔI THẬT TEM THẬT (7 màu và có 6 cánh ) mọc đóng 100%
+					h3.main-title việc làm các loại bằng khác: 
+					nav.linker
+						ul
+							li
+								i.fa.fa-hand-o-right.mr-2
+								a(href="./bangdaihoc.html") LÀM BẰNG ĐẠI HỌC.
+							li
+								i.fa.fa-hand-o-right.mr-2
+								a(href="./bangcaodang.html") LÀM BẰNG CAO ĐẲNG.
+							li
+								i.fa.fa-hand-o-right.mr-2
+								a(href="./banglaixe.html") LÀM BẰNG LÁI XE
+					.dropdown
+						button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.active(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+							b.fa.fa-phone.fa-spin
+							span.ml-2 Liên hệ
+						.dropdown-menu(aria-labelledby="dropdownMenuButton")
+							span.dropdown-item Phone: 0123456798
+						

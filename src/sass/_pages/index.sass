@@ -1,0 +1,184 @@
+body
+  background: #ededed
+  font-family: 'Poppins', sans-serif
+  .homeSlider
+    position: relative
+    .item
+      img 
+        width: 100%
+    .owl-nav
+      width: 100%
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+      .owl-next
+        font-size: 4rem
+        position: absolute
+        top: 0
+        left: 0
+        transform: translateY(-50%)
+        color: #dfe6e9
+        &:hover, &:active
+          background: transparent
+          border: none
+          outline: 0
+      .owl-prev
+        font-size: 4rem
+        position: absolute
+        top: 0
+        right: 0
+        transform: translateY(-50%)
+        color: #dfe6e9
+        &:hover, &:active
+          background: transparent
+          border: none
+          outline: 0
+    .owl-dots
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      .owl-dot
+        span 
+          background: white
+        &.active
+          span
+            background: #74b9ff
+  .intro
+    .container-fluid
+      .row
+        .col
+          h1 
+            text-transform: uppercase
+            position: relative
+            font-size: 2rem
+            &:before
+              display: block
+              content: '' 
+              position: absolute
+              width: 30%
+              height: .2rem
+              bottom: 0
+              left: 50%
+              transform: translateX(-50%) translateY(50%)
+              background: #2f2b2842
+              border-radius: 20px
+        .col-md-6.content
+          padding: 0
+          display: flex
+          align-items: center
+          background: #2d3436
+          .box-content
+            color: white
+            padding: 0 10px
+            h3 
+              margin-bottom: 10px
+            .inner
+              width: 100%
+              background: #3b6d88
+              padding: 2rem
+              border-radius: 10px
+              position: relative
+              transition: .5s all ease-in-out
+              clip-path: circle(5% at 95% 20%)
+              cursor: pointer
+              .infor
+                position: absolute
+                transition: .5s all ease-in-out
+                top: 13%
+                right: 3.5%
+              .hello
+                font-size: 1.5rem
+              .content
+                font-size: 1rem
+                a 
+                  text-decoration: none 
+                  color: white
+                  transition: .5s all ease-in-out
+                  &:hover
+                    color: #74b9ff
+              &:hover
+                clip-path: circle(75%)
+                background: #16bac5
+                .infor
+                  opacity: 0
+        .col-md-6.image
+          padding: 0
+          img 
+            width: 100%
+            height: 100%
+  .production
+    .container
+      .row
+        .col
+          h2 
+            text-transform: uppercase
+            position: relative
+            font-size: 2rem
+            &:before
+              display: block
+              content: '' 
+              position: absolute
+              width: 30%
+              height: .2rem
+              bottom: 0
+              left: 50%
+              transform: translateX(-50%) translateY(150%)
+              background: #2f2b2842
+              border-radius: 20px
+        .col-md-6
+          figure
+            overflow: hidden
+            border-radius: 10px
+            box-shadow: 0px 0px 2px 0px #000000
+            transition: .5s all ease-in-out
+            .box
+              img 
+                width: 100%
+                height: 250px
+            figcaption
+              background: #f8f8f8
+              h3
+                a
+                  text-decoration: none
+                  font-size: 1.5rem
+                  color: black
+              p 
+                color: #aaaaaa
+                font-size: .9rem
+              button
+                background: transparent
+                outline: none
+                border: 2px solid #636e72
+                transition: .5s all ease-in-out
+                border-radius: 10px
+                .link
+                  color: black
+                  padding: 1rem
+                  transition: .5s all ease-in-out
+            &:hover
+              box-shadow: 0px 0px 4px 0px #000000
+              button
+                background: #55efc4
+                .link 
+                  color: #636e72
+  .home-clients
+    .container
+      .row
+        .col
+          h3 
+            text-transform: uppercase
+            position: relative
+            font-size: 2rem
+            &:before
+              display: block
+              content: '' 
+              position: absolute
+              width: 30%
+              height: .2rem
+              bottom: 0
+              left: 50%
+              transform: translateX(-50%) translateY(50%)
+              background: #2f2b2842
+              border-radius: 20px

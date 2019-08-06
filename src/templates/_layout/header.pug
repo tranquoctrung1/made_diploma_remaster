@@ -1,0 +1,24 @@
+header.text-center#top
+	section.section-header
+		.container
+			nav.navbar.navbar-expand-lg.navbar-light
+				a.navbar-brand(href="index.html")
+					img(src="./img/logo.png", alt="Logo")
+				//- Đây là nút sẽ hiển thị trong mobile
+				button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
+					span.fa.fa-bars
+				#fullStackMenu.collapse.navbar-collapse
+					//- Thuộc tính '.mr-auto' này sẽ đẩy me nu về bên phải 
+					.mr-auto
+					ul.navbar-nav
+						li.nav-item
+							a.nav-link.active(href="index.html")
+								| TRANG CHỦ	
+						li.nav-item
+							a.nav-link.active(href="./bangdaihoc.html") ĐẠI HỌC
+						li.nav-item
+							a.nav-link.active(href="./bangcaodang.html") CAO ĐẲNG
+						li.nav-item
+							a.nav-link.active(href="./bangphothong.html") THPT
+						li.nav-item
+							a.nav-link.active(href="./banglaixe.html") BẰNG LÁI XE
