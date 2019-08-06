@@ -6,7 +6,7 @@
     "Ngôi sao đen"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/tranquoctrung1/BT_01",
+  "homepage": "https://github.com/tranquoctrung1/made_diploma_remaster",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -19,9 +19,6 @@
     "popper.js": "^1.14.7",
     "jquery": "^3.3.1",
     "font-awesome": "4.7.0",
-    "owl.carousel": "^2.3.4",
-    "animate.css": "^3.7.0",
-    "jquery-lazy": "^1.7.10",
-    "swiper": "^4.5.0"
+    "owl.carousel": "^2.3.4"
   }
 }
