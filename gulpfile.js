@@ -49,8 +49,8 @@ function create_css()
 {
     return gulp.src(['./src/sass/**/*.sass','!./src/sass/{**/\_*,**/\_*/**}'])
     .pipe(plumber())
-    // .pipe(postcss([ autoprefixer() ]))
     .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([ autoprefixer() ]))
     .pipe(concat('main.css'))
     .pipe(gulp.dest('./.dist/css'))
     .pipe(browserSync.stream());

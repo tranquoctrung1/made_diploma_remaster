@@ -118,7 +118,8 @@ body {
         border-radius: 10px;
         position: relative;
         transition: .5s all ease-in-out;
-        clip-path: circle(5% at 95% 20%);
+        -webkit-clip-path: circle(5% at 95% 20%);
+                clip-path: circle(5% at 95% 20%);
         cursor: pointer; }
         body .intro .container-fluid .row .col-md-6.content .box-content .inner .infor {
           position: absolute;
@@ -136,7 +137,8 @@ body {
             body .intro .container-fluid .row .col-md-6.content .box-content .inner .content a:hover {
               color: #74b9ff; }
         body .intro .container-fluid .row .col-md-6.content .box-content .inner:hover {
-          clip-path: circle(75%);
+          -webkit-clip-path: circle(75%);
+                  clip-path: circle(75%);
           background: #16bac5; }
           body .intro .container-fluid .row .col-md-6.content .box-content .inner:hover .infor {
             opacity: 0; }
